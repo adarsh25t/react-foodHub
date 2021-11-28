@@ -1,5 +1,5 @@
 :root {
-    --primary: rgb(175, 0, 15);
+    --primary: rgb(204, 0, 17);
   }
   
   .btn {
@@ -14,7 +14,7 @@
   
   .btn:hover {
     padding: 8px 20px;
-    color: rgb(228, 148, 0);
+    color: #fff;
     transition: 250ms;
   }
   

@@ -66,6 +66,16 @@
     .navbar {
       position: relative;
     }
+
+    .navbar-logo {
+      color: #e28101;
+      justify-self: start;
+      margin-left: 0px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      line-height: 35px;
+      font-size: 25px;
+    }
   
     .nav-menu {
       display: flex;
@@ -73,7 +83,7 @@
       width: 100%;
       height: 100vh;
       position: absolute;
-      top: 70px;
+      top: 0;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -85,15 +95,12 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
-      top: 200px;
+      top: 70px;
     }
-  
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      padding: .5rem;
       width: 100%;
-      display: table;
-      
     }
   
     .nav-links:hover {
@@ -108,29 +115,29 @@
       transform: translate(25%, 50%);
     }
   
-    .menu-icon {
+    .menu-icon{
       display: block;
       position: absolute;
-      top: 0;
+      top: 15px;
       right: 0;
       transform: translate(-100%, 60%);
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       cursor: pointer;
     }
   
     .fa-times {
       color: #fff;
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
   
     .nav-links-mobile {
       display: block;
       text-align: center;
-      padding: 1.5rem;
-      margin: 2rem auto;
+      padding: 1rem;
+      margin: .5rem auto;
       border-radius: 4px;
-      width: 80%;
-      background: #4ad9e4;
+      width: 30%;
+      background: #e28101;
       text-decoration: none;
       color: #fff;
       font-size: 1.5rem;
