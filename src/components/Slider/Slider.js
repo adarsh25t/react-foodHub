@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import './Slider.css';
 import { images } from "./images";
+import Buttons from "../../UI/Buttons";
 
 const Slider = ()=>{
 
@@ -15,27 +16,28 @@ const Slider = ()=>{
         <div className="container-slider">
             {images.map((obj, index) => {
                 return (
-                    <div
-                    className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
-                    >
-                        <h1>{obj.text}</h1>
-                        <img className="images"
-                        src={obj.image} 
-                        />
-                        
+                    <div key={obj.ID}className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                    style={{backgroundImage: `url(${obj.image})`}}>   
+                        <div className="slider-text">
+                            <h3>{obj.Title}</h3>
+                            <h1>{obj.Paragraph}</h1>
+                            <Buttons text={obj.btn}/>
+                        </div>
                     </div>
                 )
             })}
 
 
             <div className="container-dots">
-                {Array.from({length: 5}).map((item, index) => (
+                {Array.from({length: 3}).map((item, index) => (
                     <div 
+                    key={index+1}
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>
                 ))}
             </div>
+
         </div>
     )
 }
