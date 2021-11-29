@@ -1,0 +1,43 @@
+.navbar{
+    background-color: rgba(0, 0, 0, 0.938);
+    box-shadow: 0px 0px 3px 5px rgb(29, 26, 26);
+    color: white;
+}
+.heading{
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 5px;
+}
+.navbar .span{
+    color: rgb(238, 155, 1);
+}
+
+.list{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.list:hover{
+    color: orange;
+}
+.signIn{
+    background-color: rgb(238, 155, 1);
+    border-radius: 5px;
+    padding: 8px 10px;
+    border: none;
+    
+}
+
+.checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkout span{
+    color: crimson;
+}

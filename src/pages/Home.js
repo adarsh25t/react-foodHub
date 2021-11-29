@@ -1,12 +1,12 @@
 import { Fragment } from "react";
-import NavBar from "../components/NavBar";
+import Navbar from "../components/NavBar/Navbar";
 import Slider from "../components/Slider/Slider";
 
 
 const Home = ()=>{
     return(
         <Fragment>
-            <NavBar />
+            <Navbar />
             <Slider/>
         </Fragment>
     )

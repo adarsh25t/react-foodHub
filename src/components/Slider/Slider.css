@@ -1,5 +1,5 @@
 .container-slider {
-    height: 550px;
+    height: 600px;
     margin: 0px auto 0;
     position: relative;
     overflow: hidden;
@@ -31,15 +31,17 @@
   }
 
   .slider-text h1{
-    max-width: 600px;
-    font-family: 'Satisfy', cursive;
-    font-size: 3.5rem;
+    max-width: 700px;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
     text-align: center;
-    color: rgb(243, 158, 0);
+    color: rgb(224, 146, 0);
     line-height: 3.9rem;
+    font-weight: 300;
+    letter-spacing: 3px;
   }
   .slider-text h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive;
     font-size: 1.5rem;
     text-align: center;
     color: rgb(230, 0, 50);
